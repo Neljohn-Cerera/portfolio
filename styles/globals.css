@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-green-dark: 194deg 13% 20%;
+    --color-primary-green-light: 184deg 11% 28%;
+    --color-accent-yellow: 44deg 60% 50%;
+    --color-neutral-white: 0deg 0% 100%;
+    /* ... */
+  }
+
+  body {
+    @apply bg-primary;
+    @apply font-poppins;
+    @apply font-regular;
+    @apply text-white;
+  }
+}
