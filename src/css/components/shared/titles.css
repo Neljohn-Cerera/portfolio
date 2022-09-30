@@ -1,0 +1,7 @@
+@import "../../abstracts/variables.css";
+
+.title-section {
+  color: var(--clr-accent-brown);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
