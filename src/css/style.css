@@ -1,0 +1,25 @@
+/* variables */
+@import "abstracts/variables.css";
+/* base */
+@import "base/reset.css";
+/* components */
+@import "components/shared/titles.css";
+@import "components/shared/icons.css";
+/* layout */
+
+/* compositions */
+/* @import "compositions/flex.css"; */
+/* utilities */
+/* @import "utilities/text.css";
+@import "utilities/display.css";
+@import "utilities/content.css";
+@import "utilities/items.css";
+@import "utilities/background.css";
+@import "utilities/list.css";
+@import "utilities/border.css";
+@import "utilities/cursor.css";
+@import "utilities/margin.css";
+@import "utilities/padding.css";
+@import "utilities/gap.css";
+@import "utilities/height.css";
+@import "utilities/position.css"; */

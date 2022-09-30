@@ -1,0 +1,34 @@
+:root {
+  --clr-primary-green-dark: hsl(194, 13%, 20%);
+  --clr-primary-green-light: hsl(184, 11%, 28%);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-gray-100: hsl(0, 0%, 93%);
+  --clr-neutral-gray-200: hsl(44, 21%, 83%);
+  --clr-neutral-gray-600: hsl(0, 0%, 40%);
+
+  --clr-accent-yellow: hsl(44, 60%, 50%);
+  --clr-accent-brown: hsl(27, 28%, 50%);
+
+  --ff-poppins: "Poppins", sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-base: 1.125rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 1.75rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 3rem;
+  --fs-3xl: 4rem;
+}
+/* @custom-selector :--headings h1, h2, h3, h4;
+@custom-selector :--details p;
+
+@custom-media --mobile-md (min-width: 23.4375em);
+@custom-media --mobile-lg (min-width: 31.6875em); 
+@custom-media --tablet (min-width: 40em);
+@custom-media --tablet-md (min-width: 47.625em); 
+@custom-media --tablet-lg (min-width: 55.25em); 
+@custom-media --laptop (min-width: 63em); 
+@custom-media --desktop (min-width: 80em); */
