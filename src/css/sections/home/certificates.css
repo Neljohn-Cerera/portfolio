@@ -1,0 +1,18 @@
+.certificates-section {
+  border-bottom: 0.5px solid var(--clr-accent-brown);
+}
+
+.certificates-section > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .subtitle-section {
+    margin-bottom: 0.8em;
+  }
+
+  & .certificates-btn {
+    margin-top: 1.5em;
+  }
+}

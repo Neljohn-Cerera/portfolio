@@ -54,8 +54,6 @@ export const MyLogo: React.FC<Props> = ({ fill, classname }) => (
 
 export const LinkinIcon: React.FC<Props> = ({ classname }) => (
   <svg
-    width="50"
-    height="50"
     viewBox="0 0 50 50"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -67,19 +65,17 @@ export const LinkinIcon: React.FC<Props> = ({ classname }) => (
     />
     <path
       d="M18.2096 37H13.085V19.8571H18.2096V37ZM36.9999 37H31.8753V27.8423C31.8753 25.456 31.028 24.268 29.3488 24.268C28.0181 24.268 27.1743 24.9331 26.7506 26.2651C26.7506 28.4285 26.7506 37 26.7506 37H21.626C21.626 37 21.6943 21.5714 21.626 19.8571H25.671L25.9836 23.2857H26.0896C27.1401 21.5714 28.8193 20.4091 31.1219 20.4091C32.8729 20.4091 34.289 20.8977 35.3703 22.1251C36.4584 23.3543 36.9999 25.0034 36.9999 27.3194V37Z"
-      fill="white"
+      fill="currentColor"
     />
     <path
       d="M15.6477 18.1429C17.11 18.1429 18.2954 16.9916 18.2954 15.5714C18.2954 14.1513 17.11 13 15.6477 13C14.1854 13 13 14.1513 13 15.5714C13 16.9916 14.1854 18.1429 15.6477 18.1429Z"
-      fill="white"
+      fill="currentColor"
     />
   </svg>
 );
 
-export const FacebookIcon: React.FC<Props> = ({ classname }) => (
+export const FacebookIcon: React.FC<Props> = ({ classname, fill }) => (
   <svg
-    width="50"
-    height="50"
     viewBox="0 0 50 50"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +87,7 @@ export const FacebookIcon: React.FC<Props> = ({ classname }) => (
     />
     <path
       d="M20.9433 17.278V21.808H15V27.4H20.9433V40H27.977V27.4H33.9706L34.6879 21.811H27.977V17.278C27.977 16.477 28.7339 16.078 29.0531 15.832C29.6162 15.43 32.335 15.367 32.335 15.367H35V10.3C33.6124 10.1266 32.2132 10.0264 30.8106 10C20.7389 10 20.9433 17.278 20.9433 17.278Z"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="3"
       strokeMiterlimit="10"
     />
@@ -100,8 +96,6 @@ export const FacebookIcon: React.FC<Props> = ({ classname }) => (
 
 export const GithubIcon: React.FC<Props> = ({ classname }) => (
   <svg
-    width="50"
-    height="50"
     viewBox="0 0 50 50"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +107,7 @@ export const GithubIcon: React.FC<Props> = ({ classname }) => (
     />
     <path
       d="M22 32.0268C17 33.5268 17 29.5268 15 29.0268M29 35.0268V31.1568C29.0375 30.68 28.9731 30.2006 28.811 29.7506C28.6489 29.3006 28.3929 28.8902 28.06 28.5468C31.2 28.1968 34.5 27.0068 34.5 21.5468C34.4997 20.1506 33.9627 18.808 33 17.7968C33.4559 16.5753 33.4236 15.2251 32.91 14.0268C32.91 14.0268 31.73 13.6768 29 15.5068C26.708 14.8856 24.292 14.8856 22 15.5068C19.27 13.6768 18.09 14.0268 18.09 14.0268C17.5764 15.2251 17.5441 16.5753 18 17.7968C17.0301 18.8155 16.4925 20.1703 16.5 21.5768C16.5 26.9968 19.8 28.1868 22.94 28.5768C22.611 28.9168 22.3573 29.3222 22.1953 29.7667C22.0334 30.2112 21.9668 30.6849 22 31.1568V35.0268"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -123,11 +117,10 @@ export const GithubIcon: React.FC<Props> = ({ classname }) => (
 
 export const TestIcon: React.FC<Props> = ({ classname }) => (
   <svg
-    width="89"
-    height="89"
     viewBox="0 0 89 89"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={classname}
   >
     <g clipPath="url(#clip0_107_484)">
       <path

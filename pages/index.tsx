@@ -4,7 +4,14 @@ import Image from "next/image";
 import { ContactIcon, TestIcon } from "@assets/icons";
 import { img_mobile, img_mongodb, img_certficate } from "@assets/images";
 import { Title } from "@components/shared";
-import { HeroSection } from "@components/home";
+import {
+  HeroSection,
+  AboutMeSection,
+  WhatIdoSection,
+  SkillsSection,
+  ProjectSection,
+  CertificatesSection,
+} from "@components/home";
 
 const Home: NextPage = () => {
   return (
@@ -40,120 +47,26 @@ const Home: NextPage = () => {
         <main>
           {/* SECTION HERO */}
           <HeroSection />
-          {/* SECTION What i do & skills */}
+
+          {/* SECTION ABOUT ME */}
+          <AboutMeSection />
+
           <section>
-            {/* WHAT I DO */}
-            <div className="whatido">
-              <Title.Section>WHAT I DO</Title.Section>
-              <div>
-                <div>
-                  <TestIcon />
-                  <p>Responsive Design</p>
-                </div>
-                <div>
-                  <TestIcon />
-                  <p>Mobile First</p>
-                </div>
-                <div>
-                  <TestIcon />
-                  <p>Design to Code</p>
-                </div>
-                <div>
-                  <TestIcon />
-                  <p>Design to Code</p>
-                </div>
-              </div>
-              <div>
-                <span>LINE</span>
-              </div>
-            </div>
-            {/* SKILLS */}
-            <div className="skills">
-              <Title.Section>SKILLS</Title.Section>
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />{" "}
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-              <Image
-                src={img_mongodb}
-                alt="Mongo db skills image"
-                width={200}
-                height={200}
-              />
-            </div>
+            {/* SECTION WHAT I DO */}
+            <WhatIdoSection />
+            {/* SECTION SKILLS */}
+            <SkillsSection />
           </section>
+
           {/* SECTION PROJECTS */}
-          <section>
-            <Title.Section>PROJECTS</Title.Section>
-            <div>
-              <Image
-                src={img_mobile}
-                alt="Mongo db skills image"
-                width={400}
-                height={400}
-              />
-              <div>
-                <h4>Library Book Reservation</h4>
-                <p>Technology Used</p>
-                <ul>
-                  <li>Next js Typescript</li>
-                  <li>Tailwind css</li>
-                  <li>Graphql</li>
-                  <li>Apollo Express Server</li>
-                  <li>React native Expo</li>
-                  <li>Postgres</li>
-                </ul>
-              </div>
-            </div>
-            <button>View all</button>
-          </section>
+          <ProjectSection />
+
           {/* SECTION CERTIFICATES */}
-          <section>
-            <Title.Section>CERTIFICATES</Title.Section>
-            <h4>The Front End Career Path</h4>
-            <Image
-              src={img_certficate}
-              alt="Certificate"
-              width={400}
-              height={400}
-            />
-            <button>View all</button>
-          </section>
+          <CertificatesSection />
+
           {/* SECTION CONTACT ME */}
           <section>
-            <ContactIcon />
+            {/* <ContactIcon /> */}
             <Title.Section>CONTACT ME</Title.Section>
             <p>
               Mobile # : <span>09457065593</span>

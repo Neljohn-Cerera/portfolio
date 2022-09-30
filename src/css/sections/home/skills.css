@@ -1,0 +1,19 @@
+.skills-section {
+  background-color: var(--bg-light-green);
+  border-bottom: 0.5px solid var(--clr-accent-brown);
+}
+
+.skills-section > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .skills-image__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+}

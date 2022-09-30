@@ -1,3 +1,4 @@
 import Title from "./titles";
+import Button from "./button";
 
-export { Title };
+export { Title, Button };

@@ -5,8 +5,17 @@
 /* components */
 @import "components/shared/titles.css";
 @import "components/shared/icons.css";
+@import "components/shared/container.css";
+@import "components/shared/button.css";
 /* layout */
 
+/* sections*/
+@import "sections/home/hero.css";
+@import "sections/home/aboutme.css";
+@import "sections/home/whatido.css";
+@import "sections/home/skills.css";
+@import "sections/home/projects.css";
+@import "sections/home/certificates.css";
 /* compositions */
 /* @import "compositions/flex.css"; */
 /* utilities */
