@@ -20,7 +20,7 @@ const ProjectSection = () => {
             Library Book Reservation
           </Title.SectionSubtitle>
           {/* project details tech list */}
-          <ul className="project-details__tech-list">
+          <ul role={"list"} className="project-details__tech-list">
             <li className="project-details__tech-list__item">
               Next js Typescript
             </li>

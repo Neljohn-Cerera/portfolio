@@ -26,7 +26,7 @@
         font-size: var(--fs-base);
         font-weight: var(--fw-regular);
         opacity: 0.8;
-        margin-left: 2em;
+        /* margin-left: 2em; */
         /* background-color: blue; */
 
         @media (--mobile-lg) {
