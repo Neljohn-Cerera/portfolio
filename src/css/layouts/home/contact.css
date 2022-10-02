@@ -1,0 +1,78 @@
+.contact-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /* contact background image */
+  & .contact-img {
+    display: block;
+    position: absolute;
+    /* inset: 0; */
+    top: 15px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media (--mobile-lg) {
+      top: 15px;
+      left: 200px;
+    }
+    @media (--tablet) {
+      top: 10px;
+      left: 250px;
+    }
+
+    @media (--tablet-md) {
+      top: 10px;
+      left: 350px;
+    }
+
+    @media (--desktop) {
+      top: 10px;
+      left: 500px;
+    }
+
+    /* @media (--mobile-lg) {
+      inset: unset;
+      left: 10px;
+      top: 0;
+    } */
+    /* @media (--tablet-md) {
+      right: -200px;
+    }
+    @media (--tablet-lg) {
+      right: -250px;
+    }
+
+    @media (--laptop) {
+      right: -300px;
+    }
+    @media (--desktop) {
+      right: -400px;
+    } */
+  }
+
+  /* contact details */
+  & .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & > * {
+      text-align: left;
+    }
+
+    & .contact-details__key {
+      max-width: 290px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+
+    /* @media (--desktop) {
+      justify-content: center;
+      align-items: center;
+    } */
+  }
+}

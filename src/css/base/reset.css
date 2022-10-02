@@ -1,3 +1,4 @@
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -29,6 +30,8 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: var(--text-white);
 }
 
 /* Make images easier to work with */
@@ -53,3 +56,38 @@ picture {
     scroll-behavior: auto !important;
   }
 }
+
+/* @media (--mobile-lg) {
+  body {
+    background-color: red;
+  }
+} */
+
+/* @media (--tablet) {
+  body {
+    background-color: blue;
+  }
+} */
+
+/* @media (--tablet-md) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+/* @media (--tablet-lg) {
+  body {
+    background-color: green;
+  }
+} */
+/* @media (--laptop) {
+  body {
+    background-color: black;
+  }
+} */
+
+/* @media (--desktop) {
+  body {
+    background-color: violet;
+  }
+} */

@@ -1,24 +1,28 @@
-import { img_mobile } from "@assets/images";
-import { Title, Button } from "@components/shared";
-import Image from "next/image";
+import { img_books, img_mobile } from "@assets/images";
+import { Title, Button, Image } from "@components/shared";
+// import Image from "next/image";
 
 const ProjectSection = () => {
   return (
-    <section className="project-section">
+    <section id="Projects" className="project-section">
       <div className="container">
         <Title.Section>PROJECTS</Title.Section>
+
         <Image
-          src={img_mobile}
-          alt="Mongo db skills image"
-          width={400}
-          height={400}
+          src={img_books}
+          alt="Contact background picture"
+          classname="contact-img"
         />
+
+        {/* project details */}
         <div className="project-details">
           <Title.SectionSubtitle>
             Library Book Reservation
           </Title.SectionSubtitle>
+          {/* project details title */}
           <p className="project-details__title">Technology Used</p>
-          <ul role={"list"} className="project-details__tech-list">
+          {/* project details tech list */}
+          <ul className="project-details__tech-list">
             <li className="project-details__tech-list__item">
               Next js Typescript
             </li>
@@ -33,6 +37,8 @@ const ProjectSection = () => {
             <li className="project-details__tech-list__item">Postgres</li>
           </ul>
         </div>
+
+        {/* project view all button */}
         <Button text="View all" classNames="project-btn" />
       </div>
     </section>

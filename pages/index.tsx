@@ -1,9 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { ContactIcon, TestIcon } from "@assets/icons";
-import { img_mobile, img_mongodb, img_certficate } from "@assets/images";
-import { Title } from "@components/shared";
 import {
   HeroSection,
   AboutMeSection,
@@ -11,7 +7,12 @@ import {
   SkillsSection,
   ProjectSection,
   CertificatesSection,
+  ContactSection,
 } from "@components/home";
+import Footer from "@components/footer";
+import Header from "@components/header";
+import { Image } from "@components/shared";
+import { img_cube } from "@assets/images";
 
 const Home: NextPage = () => {
   return (
@@ -23,63 +24,43 @@ const Home: NextPage = () => {
       </Head>
       <>
         {/* HEADER */}
-        {/* <header>
-          <div>
-            <MyLogo classname="w-16 h-16" fill="white" />
-            <button>
-              <MenuIcon classname="w-10 h-10 text-white" />
-            </button>
-          </div>
-          <nav>
-            <ul>
-              <li className="">Home</li>
-              <li>Projects</li>
-              <li>What i do</li>
-              <li>About Me</li>
-              <li>Contact me</li>
-            </ul>
-            <button>
-              Download CV <DownloadIcon />
-            </button>
-          </nav>
-        </header> */}
-        {/* MAIN */}
+        <Header />
+
         <main>
-          {/* SECTION HERO */}
+          {/* HERO */}
           <HeroSection />
 
-          {/* SECTION ABOUT ME */}
+          {/* ABOUT ME */}
           <AboutMeSection />
 
-          <section>
-            {/* SECTION WHAT I DO */}
+          <section className="skills-whatido-section">
+            {/* back ground image */}
+            <div className="skills-whatido__container">
+              <Image
+                src={img_cube}
+                alt="Skills and What I do background image"
+                classname="skills-whatido__bg-img"
+              />
+            </div>
+
+            {/* WHAT I DO */}
             <WhatIdoSection />
-            {/* SECTION SKILLS */}
+            {/* SKILLS */}
             <SkillsSection />
           </section>
 
-          {/* SECTION PROJECTS */}
+          {/* PROJECTS */}
           <ProjectSection />
 
-          {/* SECTION CERTIFICATES */}
+          {/* CERTIFICATES */}
           <CertificatesSection />
 
-          {/* SECTION CONTACT ME */}
-          <section>
-            {/* <ContactIcon /> */}
-            <Title.Section>CONTACT ME</Title.Section>
-            <p>
-              Mobile # : <span>09457065593</span>
-            </p>
-            <p>
-              Email <span>neljohncerera.github@gmailc.om</span>
-            </p>
-          </section>
+          {/* CONTACT ME */}
+          <ContactSection />
         </main>
+
         {/* FOOTER */}
-        <footer>
-          <h3>FOOTER</h3>
-        </footer>
+        <Footer />
       </>
     </>
   );

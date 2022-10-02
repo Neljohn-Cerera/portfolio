@@ -4,6 +4,7 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="container">
+        {/* hero socials */}
         <div className="hero-section__details">
           <h1 className="hero-title">HELLO</h1>
           <h2 className="hero-subtitle">
@@ -13,6 +14,7 @@ const HeroSection = () => {
           <div className="hero-detail__line"></div>
           <p className="hero-detail__role">Web Developer</p>
         </div>
+        {/* hero socials */}
         <div className="hero-section__socials">
           <p className="hero-social__title">Follow me</p>
           <div className="hero-social__line"></div>

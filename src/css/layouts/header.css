@@ -1,0 +1,56 @@
+.header {
+  /* main */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-inline: 10rem;
+  /* header button menu */
+  & .btn-menu {
+    @media (--tablet) {
+      display: none;
+    }
+  }
+
+  /* header navigation  */
+  & .header-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* header navigation list */
+    & .header-navigation__list {
+      display: none;
+
+      @media (--tablet) {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+      }
+      @media (--tablet-md) {
+        gap: 2em;
+      }
+
+      @media (--laptop) {
+        gap: 3em;
+      }
+    }
+  }
+
+  /* header navigation button download */
+  & .btn-download {
+    display: none;
+
+    @media (--tablet) {
+      position: absolute;
+      bottom: -33px;
+      right: 2.5em;
+      display: flex;
+      gap: 0.5em;
+    }
+    @media (--tablet-lg) {
+      position: static;
+    }
+  }
+}

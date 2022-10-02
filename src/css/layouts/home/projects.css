@@ -1,0 +1,28 @@
+.project-section > * {
+  /* main */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* project details */
+  & .project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    /* project details technology list */
+    & .project-details__tech-list {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+      flex-wrap: wrap;
+
+      @media (--mobile-lg) {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

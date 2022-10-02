@@ -1,19 +1,39 @@
 .hero-section {
-  border-bottom: 0.5px solid var(--clr-accent-brown);
+  /* border-bottom: 0.5px solid var(--clr-accent-brown); */
+  & .container {
+    /* padding-block: min(4rem, 5vw, 6rem); */
+    /* background-color: orange; */
+
+    @media (--tablet) {
+      padding-block: 4.4em;
+    }
+    @media (--tablet-md) {
+      padding-block: 4.8em;
+    }
+    @media (--tablet-lg) {
+      padding-block: 5.2em;
+    }
+    @media (--laptop) {
+      padding-block: 5.6em;
+    }
+    /* @media (--desktop) {
+      padding-block: 6em;
+    } */
+  }
 }
 .hero-section > * {
-  display: flex;
-  flex-direction: column;
-
   & .hero-section__details {
-    display: flex;
-    flex-direction: column;
-
-    & .hero-detail__line {
-      width: 30%;
-      height: 2px;
-      background-color: var(--clr-accent-brown);
-      margin-bottom: 0.5em;
+    & .hero-subtitle {
+      position: relative;
+      &::before {
+        content: "";
+        width: 40%;
+        height: 3px;
+        background-color: var(--clr-accent-brown);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
     }
 
     & .hero-detail__role {
@@ -24,30 +44,45 @@
   }
 
   & .hero-section__socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0.5em;
+    @media (--mobile-lg) {
+      height: 270px;
+    }
+
+    @media (--tablet) {
+      height: 300px;
+    }
+
+    @media (--tablet-md) {
+      height: 330px;
+    }
+    @media (--tablet-lg) {
+      height: 360px;
+    }
+
+    /* @media (--laptop) {
+      height: 370px;
+    } */
 
     & .hero-social__title {
       color: var(--text-light-gray);
       font-size: var(--fs-sm);
       font-weight: var(--fw-regular);
       opacity: 0.8;
+
+      @media (--mobile-lg) {
+        transform: rotate(90deg);
+      }
     }
 
     & .hero-social__line {
-      display: none;
-      flex: 1;
-      height: 1px;
-      background-color: var(--clr-accent-brown);
-      opacity: 0.5;
-    }
-
-    & .hero-social__icons {
-      display: flex;
-      gap: 0.5em;
+      @media (--mobile-lg) {
+        display: block;
+        height: 100%;
+        width: 3px;
+        background-color: var(--clr-accent-brown);
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
     }
   }
 }

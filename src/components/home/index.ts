@@ -4,6 +4,7 @@ import WhatIdoSection from "./whatido";
 import SkillsSection from "./skills";
 import ProjectSection from "./projects";
 import CertificatesSection from "./certificates";
+import ContactSection from "./contact";
 
 export {
   HeroSection,
@@ -12,4 +13,5 @@ export {
   SkillsSection,
   ProjectSection,
   CertificatesSection,
+  ContactSection,
 };
