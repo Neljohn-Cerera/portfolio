@@ -68,7 +68,7 @@
       font-size: var(--fs-sm);
       font-weight: var(--fw-regular);
       opacity: 0.8;
-      width: 60px;
+      width: 70px;
 
       @media (--mobile-lg) {
         transform: rotate(90deg);
