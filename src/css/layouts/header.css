@@ -45,7 +45,7 @@
     @media (--tablet) {
       position: absolute;
       bottom: -33px;
-      right: 2.5em;
+      right: 3em;
       display: flex;
       gap: 0.5em;
     }

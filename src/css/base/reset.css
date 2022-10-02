@@ -61,9 +61,9 @@ picture {
   body {
     background-color: red;
   }
-} */
+}
 
-/* @media (--tablet) {
+@media (--tablet) {
   body {
     background-color: blue;
   }
