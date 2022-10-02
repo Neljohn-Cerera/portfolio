@@ -23,6 +23,7 @@
 }
 .hero-section > * {
   & .hero-section__details {
+    margin-bottom: 2em;
     & .hero-subtitle {
       position: relative;
       &::before {
