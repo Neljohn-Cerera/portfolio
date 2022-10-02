@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="hero-section__details">
           <h1 className="hero-title">HELLO</h1>
           <h2 className="hero-subtitle">
-            I'm <br />
+            {"I'm"} <br />
             Neljohn <span>Cerera</span>
           </h2>
           <div className="hero-detail__line"></div>

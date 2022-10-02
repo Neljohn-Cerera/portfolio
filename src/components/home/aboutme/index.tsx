@@ -9,7 +9,7 @@ const AboutMeSection = () => {
 
         {/* about me details */}
         <p className="aboutme-details">
-          I'm a recent college graduate with a Bachelor of Science in
+          {"I'm"} a recent college graduate with a Bachelor of Science in
           Information Technology who is passionate and committed to developing
           websites and integrating Android applications.
         </p>
