@@ -4,7 +4,7 @@ import img_certficate from "./certificate.png";
 import img_me from "./me.png";
 import img_cube from "./cube.png";
 import img_skills_nextjs from "./skills_nextjs.png";
-import img_skills_msyql from "./skills_mySql.png";
+import img_skills_msyql from "./skills_mysql.png";
 import img_skills_mongodb from "./skills_mongodb.png";
 import img_skills_nodejs from "./skills_nodejs.png";
 import img_skills_postgres from "./skills_postgres.png";
