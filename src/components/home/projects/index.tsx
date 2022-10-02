@@ -19,8 +19,6 @@ const ProjectSection = () => {
           <Title.SectionSubtitle>
             Library Book Reservation
           </Title.SectionSubtitle>
-          {/* project details title */}
-          <p className="project-details__title">Technology Used</p>
           {/* project details tech list */}
           <ul className="project-details__tech-list">
             <li className="project-details__tech-list__item">

@@ -17,18 +17,9 @@
       margin-top: 0.8em;
     }
 
-    /* project details title */
-    & .project-details__title {
-      text-align: center;
-      font-size: var(--fs-md);
-
-      @media (--mobile-lg) {
-        margin-bottom: 0.5em;
-      }
-    }
-
     /* project details technology list */
     & .project-details__tech-list {
+      margin-block: 1em;
       /* project details technology list item */
       & .project-details__tech-list__item {
         color: var(--text-light-gray);
@@ -36,6 +27,7 @@
         font-weight: var(--fw-regular);
         opacity: 0.8;
         margin-left: 2em;
+        /* background-color: blue; */
 
         @media (--mobile-lg) {
           margin-right: 1em;
