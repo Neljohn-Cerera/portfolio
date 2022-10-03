@@ -16,7 +16,7 @@
     & .certificate-buttons {
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       z-index: 1;
       display: flex;
       flex-direction: column;
@@ -33,7 +33,7 @@
       }
 
       & > button {
-        background-color: var(--bg-gray);
+        background-color: var(--bg-yellow);
         color: var(--text-white);
         font-size: var(--fs-base);
         font-weight: var(--fw-regular);
@@ -44,7 +44,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: var(--bg-gray-hover);
+          background-color: var(--bg-yellow-dark);
         }
       }
     }
