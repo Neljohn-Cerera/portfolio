@@ -9,11 +9,12 @@ const CertificatesSection = () => {
   return (
     <section className="certificates-section">
       <div className="container">
+        {/* certificate title */}
         <Title.Section classname="certificate-title">
           CERTIFICATES
         </Title.Section>
-        {/* <Title.SectionSubtitle>The Front End Career Path</Title.SectionSubtitle> */}
 
+        {/* certificate one */}
         <div className="certificate certificate-one">
           <div className="certificate-buttons">
             <h4 className="certificate-buttons__title">Advance React</h4>
@@ -25,6 +26,8 @@ const CertificatesSection = () => {
             alt="advance react certificate image"
           />
         </div>
+
+        {/* certificate two */}
         <div className="certificate certificate-two">
           <div className="certificate-buttons">
             <h4 className="certificate-buttons__title">
@@ -38,6 +41,8 @@ const CertificatesSection = () => {
             alt="front end development career path certificate image"
           />
         </div>
+
+        {/* certificate three */}
         <div className="certificate certificate-three">
           <div className="certificate-buttons">
             <h4 className="certificate-buttons__title">
@@ -51,6 +56,8 @@ const CertificatesSection = () => {
             alt="learn responsive design certificate image"
           />
         </div>
+
+        {/* certificate btn */}
         <Button text="View all" classNames="certificates-btn" />
       </div>
     </section>

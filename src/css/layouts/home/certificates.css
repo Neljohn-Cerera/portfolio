@@ -6,7 +6,6 @@
     "certificate-two certificate-two"
     "certificate-three certificate-three"
     "certificates-btn certificates-btn";
-
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 270px 270px 270px;
   row-gap: 2em;
@@ -17,63 +16,38 @@
     & .certificate-buttons {
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.6);
+
       z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 1em;
-
-      & .certificate-buttons__title {
-        text-align: center;
-        font-size: var(--fs-md);
-        font-weight: var(--fw-semibold);
-        text-transform: uppercase;
-        opacity: 0.8;
-      }
-
-      & > button {
-        background-color: var(--bg-yellow);
-        color: var(--text-white);
-        font-size: var(--fs-base);
-        font-weight: var(--fw-regular);
-        text-transform: uppercase;
-        border: none;
-        padding: 10px 35px;
-        border-radius: 5px;
-
-        &:hover {
-          cursor: pointer;
-          background-color: var(--bg-yellow-dark);
-        }
-      }
-    }
-
-    & .certificate-img {
-      height: 100%;
-      width: 100%;
     }
   }
 
+  /* grid certificate-title */
   & .certificate-title {
     grid-area: certificate-title;
-    margin-block: auto;
   }
 
+  /* grid certificate-one */
   & .certificate-one {
     grid-area: certificate-one;
   }
 
+  /* grid certificate-two */
   & .certificate-two {
     grid-area: certificate-two;
     /* overflow-y: hidden; */
   }
 
+  /* grid certificate-three */
   & .certificate-three {
     grid-area: certificate-three;
   }
 
+  /* grid certificate-btn */
   & .certificates-btn {
     grid-area: certificates-btn;
   }

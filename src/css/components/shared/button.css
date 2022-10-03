@@ -6,7 +6,6 @@
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   color: var(--text-white);
-  transition: all;
 
   &:hover {
     cursor: pointer;

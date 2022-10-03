@@ -1,25 +1,58 @@
-/* .certificates-section {
+.certificates-section {
   background-color: var(--bg-light-green);
 }
 
-.certificates-section > * {
-  & .subtitle-section {
-    margin-bottom: 0.8em;
+.certificates-section > .container {
+  /* certificate-title */
+  & .certificate-title {
+    margin-block: auto;
   }
 
-  & .certificates-img {
-    width: 100%;
-    opacity: 0.5;
+  /* certificate */
+  & .certificate {
+    & .certificate-buttons {
+      box-shadow: 10px 10px 10px 5px var(--bg-dark-green);
+      background-color: rgba(0, 0, 0, 0.6);
+
+      & .certificate-buttons__title {
+        text-align: center;
+        font-size: var(--fs-md);
+        font-weight: var(--fw-semibold);
+        text-transform: uppercase;
+        opacity: 0.8;
+      }
+
+      & > button {
+        background-color: var(--bg-yellow);
+        color: var(--text-white);
+        font-size: var(--fs-base);
+        font-weight: var(--fw-regular);
+        text-transform: uppercase;
+        border: none;
+        padding: 10px 35px;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--bg-yellow-dark);
+          transition: all 0.4s;
+        }
+      }
+    }
+
+    & .certificate-img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
-  & .certificates-btn {
-    margin-top: 1.5em;
-  }
-} */
-.certificates-section {
-  background-color: var(--bg-light-green);
-
+  /* certificate-btn */
   & .certificates-btn {
     margin-inline: auto;
+
+    &:hover {
+      transition: all 0.4s;
+      box-shadow: 0 0 1px 3px var(--bg-yellow);
+    }
   }
 }
