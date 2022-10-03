@@ -6,12 +6,12 @@ const ProjectSection = () => {
   return (
     <section id="Projects" className="project-section">
       <div className="container">
-        <Title.Section>PROJECTS</Title.Section>
+        <Title.Section classname="project-title">PROJECTS</Title.Section>
 
         <Image
           src={img_books}
-          alt="Contact background picture"
-          classname="contact-img"
+          alt="Hands holding Books picture"
+          classname="project-img"
         />
 
         {/* project details */}
@@ -32,7 +32,7 @@ const ProjectSection = () => {
             <li className="project-details__tech-list__item">
               React native Expo
             </li>
-            <li className="project-details__tech-list__item">Postgres</li>
+            <li className="project-details__tech-list__item">PostgreSQL</li>
           </ul>
         </div>
 

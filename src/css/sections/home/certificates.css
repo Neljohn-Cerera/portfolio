@@ -1,4 +1,4 @@
-.certificates-section {
+/* .certificates-section {
   background-color: var(--bg-light-green);
 }
 
@@ -15,4 +15,7 @@
   & .certificates-btn {
     margin-top: 1.5em;
   }
+} */
+.certificates-section {
+  background-color: var(--bg-light-green);
 }

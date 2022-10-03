@@ -67,26 +67,26 @@ picture {
   body {
     background-color: blue;
   }
-} */
+}
 
-/* @media (--tablet-md) {
+@media (--tablet-md) {
   body {
     background-color: yellow;
   }
-} */
+}
 
-/* @media (--tablet-lg) {
+@media (--tablet-lg) {
   body {
     background-color: green;
   }
-} */
-/* @media (--laptop) {
+}
+@media (--laptop) {
   body {
     background-color: black;
   }
-} */
+}
 
-/* @media (--desktop) {
+@media (--desktop) {
   body {
     background-color: violet;
   }

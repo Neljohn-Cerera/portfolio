@@ -12,11 +12,17 @@ import img_skills_reactjs from "./skills_reactjs.png";
 import img_skills_tailwind from "./skills_tailwind.png";
 import img_contact from "./contact.png";
 import img_books from "./books.jpg";
+import img_certificate_advancereact from "./advancereact.png";
+import img_certificate_learnresponsivedesign from "./learnresponsivedesign.png";
+import img_certificate_frontendcareerpath from "./frontendcareerpath.png";
 
 export {
   img_mongodb,
   img_mobile,
   img_certficate,
+  img_certificate_advancereact,
+  img_certificate_learnresponsivedesign,
+  img_certificate_frontendcareerpath,
   img_me,
   img_skills_nextjs,
   img_skills_msyql,
