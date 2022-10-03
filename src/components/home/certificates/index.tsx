@@ -17,8 +17,7 @@ const CertificatesSection = () => {
         <div className="certificate certificate-one">
           <div className="certificate-buttons">
             <h4 className="certificate-buttons__title">Advance React</h4>
-            <button>Link</button>
-            <button>Certificates</button>
+            <button>View</button>
           </div>
           <Image
             classname="certificate-img"
@@ -31,8 +30,7 @@ const CertificatesSection = () => {
             <h4 className="certificate-buttons__title">
               Front End Development Career Path
             </h4>
-            <button>Link</button>
-            <button>Certificates</button>
+            <button>View</button>
           </div>
           <Image
             classname="certificate-img"
@@ -45,8 +43,7 @@ const CertificatesSection = () => {
             <h4 className="certificate-buttons__title">
               Learn Responsive Design
             </h4>
-            <button>Link</button>
-            <button>Certificates</button>
+            <button>View</button>
           </div>
           <Image
             classname="certificate-img"
@@ -54,7 +51,7 @@ const CertificatesSection = () => {
             alt="learn responsive design certificate image"
           />
         </div>
-        {/* <Button text="View all" classNames="certificates-btn" /> */}
+        <Button text="View all" classNames="certificates-btn" />
       </div>
     </section>
   );

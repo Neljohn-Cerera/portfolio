@@ -4,7 +4,8 @@
     "certificate-title certificate-title"
     "certificate-one certificate-one"
     "certificate-two certificate-two"
-    "certificate-three certificate-three";
+    "certificate-three certificate-three"
+    "certificates-btn certificates-btn";
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 270px 270px 270px;
@@ -71,5 +72,9 @@
 
   & .certificate-three {
     grid-area: certificate-three;
+  }
+
+  & .certificates-btn {
+    grid-area: certificates-btn;
   }
 }

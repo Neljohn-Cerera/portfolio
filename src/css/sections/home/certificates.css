@@ -18,4 +18,8 @@
 } */
 .certificates-section {
   background-color: var(--bg-light-green);
+
+  & .certificates-btn {
+    margin-inline: auto;
+  }
 }
