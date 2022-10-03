@@ -50,13 +50,13 @@ picture {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    /* animation-duration: 0.01ms !important; */
+    /* animation-iteration-count: 1 !important; */
     scroll-behavior: auto !important;
   }
 }
 
-/* @media (--mobile-lg) {
+@media (--mobile-lg) {
   body {
     background-color: red;
   }
@@ -89,4 +89,4 @@ picture {
   body {
     background-color: violet;
   }
-} */
+}
