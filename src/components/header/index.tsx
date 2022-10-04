@@ -2,6 +2,7 @@ import { DownloadIcon, MenuIcon, MyLogo } from "@assets/icons";
 import classnames from "classnames";
 import React from "react";
 import { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean | undefined>(undefined);
@@ -10,7 +11,7 @@ const Header = () => {
     !openMenu ? setOpenMenu(true) : openMenu ? setOpenMenu(false) : undefined;
   };
   return (
-    <header className="header">
+    <header id="home" className="header">
       {/* header logo */}
       <MyLogo classname="header-logo" fill="#ffffff" />
 
@@ -30,19 +31,19 @@ const Header = () => {
           })}
         >
           <li className="header-navigation__item">
-            <a href="Home">Home</a>
+            <AnchorLink href="#home">Home</AnchorLink>
           </li>
           <li className="header-navigation__item">
-            <a href="#projects">Projects</a>
+            <AnchorLink href="#projects">Projects</AnchorLink>
           </li>
           <li className="header-navigation__item">
-            <a href="#certificates">Certificates</a>
+            <AnchorLink href="#certificates">Certificates</AnchorLink>
           </li>
           <li className="header-navigation__item">
-            <a href="#aboutme">About Me</a>
+            <AnchorLink href="#aboutme">About Me</AnchorLink>
           </li>
           <li className="header-navigation__item">
-            <a href="#contactme">Contact Me</a>
+            <AnchorLink href="#contactme">Contact Me</AnchorLink>
           </li>
           <li className="header-navigation__item-download">
             <a href="#contactme">Download CV</a>

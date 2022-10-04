@@ -3,8 +3,8 @@ import { Image, Title } from "@components/shared";
 
 const AboutMeSection = () => {
   return (
-    <section className="aboutme-section">
-      <div id="AboutMe" className="container">
+    <section id="aboutme" className="aboutme-section">
+      <div className="container">
         <Title.Section classname="aboutme-title">About Me</Title.Section>
 
         {/* about me details */}

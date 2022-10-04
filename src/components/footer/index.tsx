@@ -1,5 +1,6 @@
 import { FacebookIcon, GithubIcon, LinkinIcon } from "@assets/icons";
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Footer = () => {
   return (
@@ -9,22 +10,25 @@ const Footer = () => {
         <nav className="footer-navigation">
           <ul role={"list"}>
             <li className="footer-navigation__item">
-              <a href="Home">Home</a>
+              <AnchorLink href="#">Home</AnchorLink>
             </li>
             <li className="footer-navigation__item">
-              <a href="whatido">What i do</a>
+              <AnchorLink href="#whatido">What i do</AnchorLink>
             </li>
             <li className="footer-navigation__item">
-              <a href="#projects">Projects</a>
+              <AnchorLink href="#skills">Skills</AnchorLink>
             </li>
             <li className="footer-navigation__item">
-              <a href="#certificates">Certificates</a>
+              <AnchorLink href="#projects">Projects</AnchorLink>
             </li>
             <li className="footer-navigation__item">
-              <a href="#aboutme">About Me</a>
+              <AnchorLink href="#certificates">Certificates</AnchorLink>
             </li>
             <li className="footer-navigation__item">
-              <a href="#contactme">Contact Me</a>
+              <AnchorLink href="#aboutme">About Me</AnchorLink>
+            </li>
+            <li className="footer-navigation__item">
+              <AnchorLink href="#contactme">Contact Me</AnchorLink>
             </li>
           </ul>
         </nav>

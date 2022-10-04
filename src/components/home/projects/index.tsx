@@ -4,7 +4,7 @@ import { Title, Button, Image } from "@components/shared";
 
 const ProjectSection = () => {
   return (
-    <section id="Projects" className="project-section">
+    <div id="projects" className="project-section">
       <div className="container">
         <Title.Section classname="project-title">PROJECTS</Title.Section>
 
@@ -39,7 +39,7 @@ const ProjectSection = () => {
         {/* project view all button */}
         <Button text="View all" classNames="project-btn" />
       </div>
-    </section>
+    </div>
   );
 };
 

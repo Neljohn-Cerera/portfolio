@@ -3,7 +3,7 @@ import { Image, Title } from "@components/shared";
 
 const ContactSection = () => {
   return (
-    <section id="ContactMe" className="contact-section">
+    <section id="contactme" className="contact-section">
       <div className="container">
         {/* contact background image */}
         {/* <ContactIcon classname="contact-img" /> */}

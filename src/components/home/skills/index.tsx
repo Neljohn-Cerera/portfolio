@@ -11,7 +11,7 @@ import { Image, Title } from "@components/shared";
 
 const SkillsSection = () => {
   return (
-    <div className="skills-section">
+    <div id="skills" className="skills-section">
       <div className="container">
         <Title.Section>SKILLS</Title.Section>
         <ul role={"list"} className="skills-image__list">

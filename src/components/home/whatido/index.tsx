@@ -8,7 +8,7 @@ import { Title } from "@components/shared";
 
 const WhatIdoSection = () => {
   return (
-    <div id="WhatIDo" className="whatido-section">
+    <div id="whatido" className="whatido-section">
       <div className="container">
         <Title.Section classname="whatido-title">WHAT I DO</Title.Section>
         {/* whatido list */}

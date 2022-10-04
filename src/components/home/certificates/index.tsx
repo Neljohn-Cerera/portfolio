@@ -28,7 +28,7 @@ const CertificatesSection = () => {
   };
 
   return (
-    <section className="certificates-section">
+    <section id="certificates" className="certificates-section">
       <div className="container">
         {/* certificate title */}
         <Title.Section classname="certificate-title">

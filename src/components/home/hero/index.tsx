@@ -2,7 +2,7 @@ import { FacebookIcon, GithubIcon, LinkinIcon } from "@assets/icons";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section id="hero" className="hero-section">
       <div className="container">
         {/* hero details */}
         <div className="hero-section__details">

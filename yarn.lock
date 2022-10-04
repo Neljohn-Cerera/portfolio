@@ -2428,6 +2428,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+react-anchor-link-smooth-scroll-v2@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll-v2/-/react-anchor-link-smooth-scroll-v2-2.0.1.tgz#7e9d0acd16a20d50d0c1d2b167af619c0b58142a"
+  integrity sha512-Xx9/u2qPiG//GteW9tz8u6pNjPNzlP0vMjFPR1sVoPydmdJhGm/hFXGKIEnzeeKuqisKYw7CKrIZDUD7Wy4HHg==
+
 react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
