@@ -42,7 +42,6 @@ const Home: NextPage = () => {
                 classname="skills-whatido__bg-img"
               />
             </div>
-
             {/* WHAT I DO */}
             <WhatIdoSection />
             {/* SKILLS */}
