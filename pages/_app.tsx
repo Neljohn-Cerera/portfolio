@@ -9,10 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         {/* if not set overflow x will show in the page */}
         {/* note: this must be set in app.js ref: https://nextjs.org/docs/messages/no-document-viewport-meta */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />
-      );
     </>
   );
 }

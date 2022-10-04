@@ -97,14 +97,14 @@
 .header-navigation {
   & .header-navigation__list--animate {
     animation-name: animateNavigationList;
-    animation-duration: 1s;
+    animation-duration: 400ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
 
   & .header-navigation__list--animate-close {
     animation-name: animateNavigationListClose;
-    animation-duration: 1s;
+    animation-duration: 400ms;
     animation-timing-function: linear;
     animation-fill-mode: backwards;
   }
@@ -113,22 +113,28 @@
 @keyframes animateNavigationList {
   0% {
     transform: translateX(100%);
+    opacity: 0;
   }
   50% {
     transform: translateX(50%);
+    opacity: 0.2;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes animateNavigationListClose {
   0% {
     transform: translateX(0);
+    opacity: 1;
   }
   50% {
     transform: translateX(-50%);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(-100%);
+    opacity: 0;
   }
 }
