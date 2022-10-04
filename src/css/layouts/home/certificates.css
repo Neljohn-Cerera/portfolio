@@ -1,5 +1,6 @@
-/* z-index buttons = 1 */
-/* z-index certificate animation = 2 */
+/* z-index certificate-buttons = 1 */
+/* z-index certificate-animation = 2 */
+/* z-index certificate-animation__btn-open = 5 */
 
 .certificates-section > .container {
   display: grid;
@@ -12,12 +13,22 @@
   grid-template-rows: 1fr 270px 270px 270px;
   row-gap: 2em;
 
+  @media (--laptop) {
+    grid-template-areas:
+      "certificate-title certificate-title"
+      "certificate-two certificate-one"
+      "certificate-two certificate-three";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 270px 270px;
+    gap: 2em;
+  }
+
+  /* certificate */
   & .certificate {
     position: relative;
 
     /* certificate animations */
     & .certificate-animation {
-      background-color: transparent;
       position: absolute;
       inset: 0;
       z-index: 2;
@@ -25,60 +36,27 @@
 
       /* certificate animation button open */
       & .certificate-animation__btn-open {
-        background-color: transparent;
-        color: var(--text-white);
-        font-size: var(--fs-lg);
-        font-weight: var(--fw-bold);
-        padding: 15px 35px;
         z-index: 5;
-        border: 1px solid var(--bg-brown);
-        border-radius: 5px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        &:hover {
-          cursor: pointer;
-          box-shadow: 0 0 5px 5px var(--bg-brown);
-          transition: all 0.4s;
-        }
       }
 
       /* certificate animation left container */
       & .certificate-animation__left {
-        background-color: var(--bg-dark-green);
         position: absolute;
         inset-block: 0;
         left: 0;
         width: 50%;
-        border-right: 1px solid var(--bg-light-green);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        padding-inline: 1.5em;
-
-        /* certificate animation left long line */
-        & .certificate-animation__left-line {
-          height: 0.1em;
-          background-color: var(--bg-white);
-          width: 100%;
-          opacity: 0.3;
-        }
-
-        /* certificate animation left short line */
-        & .certificate-animation__left-line--short {
-          height: 0.1em;
-          background-color: var(--bg-white);
-          width: 50%;
-          opacity: 0.3;
-        }
       }
 
       /* certificate animation right container */
       & .certificate-animation__right {
-        background-color: var(--bg-dark-green);
-        width: 50%;
         position: absolute;
         inset-block: 0;
         right: 0;
@@ -86,12 +64,10 @@
         align-items: flex-end;
         justify-content: flex-end;
 
-        /* certificate animation right ribbon */
-        & .certificate-animation__right-ribbon {
-          height: 80px;
-          width: 80px;
-          fill: var(--text-white);
-          opacity: 0.8;
+        & .certificate-animation__right-certified {
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
     }
