@@ -25,6 +25,7 @@ body {
   color: var(--clr-neutral-white);
   background-color: var(--clr-primary-green-dark);
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
