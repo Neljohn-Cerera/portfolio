@@ -19,7 +19,7 @@ html:focus-within {
 
 body {
   position: relative;
-  max-height: 100vh;
+  height: 100%;
   font-family: var(--ff-poppins);
   font-size: var(--fs-base);
   color: var(--clr-neutral-white);

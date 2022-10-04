@@ -158,29 +158,28 @@
 
     & .certificate-animation__btn-open--animate {
       animation-name: animateCertificateButtonOpen;
-      animation-duration: 400ms;
+      animation-duration: 200ms;
       animation-fill-mode: forwards;
     }
 
     & .certificate-animation__left--animate {
       animation-name: animateCertificateLeft;
-      animation-duration: 1300ms;
-      animation-delay: 500ms;
+      animation-duration: 1s;
+      animation-delay: 200ms;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
     & .certificate-animation__right--animate {
       animation-name: animateCertificateRight;
-      animation-duration: 1300ms;
-      animation-delay: 500ms;
+      animation-duration: 1s;
+      animation-delay: 200ms;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
 
     & .certificate-animation__right-certified--animate {
       animation-name: animateCertificateCertified;
-      animation-duration: 500ms;
-      animation-delay: 200ms;
+      animation-duration: 400ms;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
