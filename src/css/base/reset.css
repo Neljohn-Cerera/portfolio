@@ -26,7 +26,6 @@ html:focus-within {
 body {
   position: relative;
   height: 100%;
-  width: 100%;
   font-family: var(--ff-poppins);
   font-size: var(--fs-base);
   color: var(--clr-neutral-white);
