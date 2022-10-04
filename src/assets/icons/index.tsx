@@ -20,6 +20,25 @@ export const MenuIcon: React.FC<Props> = ({ classname }) => (
   </svg>
 );
 
+export const UpIcon: React.FC<Props> = ({ classname }) => (
+  <svg
+    width="48px"
+    height="48px"
+    viewBox="0 0 48 48"
+    fill="none"
+    className={classname}
+  >
+    <rect width="48" height="48" fill="currentColor" fillOpacity="0.01" />
+    <path
+      d="M13 30L25 18L37 30"
+      stroke="currentColor"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export const DownloadIcon: React.FC<Props> = ({ classname }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

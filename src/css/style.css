@@ -8,6 +8,7 @@
 @import "components/shared/container.css";
 @import "components/shared/button.css";
 @import "components/shared/image.css";
+@import "components/shared/scrolltoTop.css";
 
 /* layous */
 @import "layouts/home/hero.css";

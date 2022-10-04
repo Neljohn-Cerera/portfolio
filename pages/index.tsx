@@ -11,7 +11,7 @@ import {
 } from "@components/home";
 import Footer from "@components/footer";
 import Header from "@components/header";
-import { Image } from "@components/shared";
+import { Image, ScrolltoTop } from "@components/shared";
 import { img_cube } from "@assets/images";
 
 const Home: NextPage = () => {
@@ -23,6 +23,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
+        {/* SCROLL UP */}
+        <ScrolltoTop />
+
         {/* HEADER */}
         <Header />
 
