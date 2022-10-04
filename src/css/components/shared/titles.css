@@ -18,17 +18,9 @@
   text-align: center;
 }
 
-.hero-title {
-  color: var(--clr-neutral-gray-400);
-  font-size: clamp(var(--fs-3xl), 14vw, var(--fs-4xl));
-  font-weight: var(--fw-bold);
-  letter-spacing: 10px;
-  line-height: 1;
-}
 .hero-subtitle {
   color: var(--text-white);
   font-size: clamp(var(--fs-xl), 6vw, var(--fs-2xl));
-  /* font-size: var(--fs-xl); */
   font-weight: var(--fw-bold);
   line-height: 1.3;
   margin-bottom: 0.4em;

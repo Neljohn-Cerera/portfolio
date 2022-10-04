@@ -1,11 +1,7 @@
-/* .hero-section {
-  z-index: 1;
-} */
 .hero-section > * {
   /* Main */
   display: flex;
   flex-direction: column;
-
   @media (--mobile-lg) {
     flex-direction: row;
     justify-content: space-between;

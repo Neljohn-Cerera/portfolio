@@ -93,6 +93,17 @@
 
 /* animations */
 
+/* header */
+.header {
+  @media (--tablet) {
+    animation-name: animateHeader;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
 /* header navigation  */
 .header-navigation {
   & .header-navigation__list--animate {
@@ -107,6 +118,16 @@
     animation-duration: 400ms;
     animation-timing-function: linear;
     animation-fill-mode: backwards;
+  }
+}
+@keyframes animateHeader {
+  50% {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -124,6 +145,7 @@
     opacity: 1;
   }
 }
+
 @keyframes animateNavigationListClose {
   0% {
     transform: translateX(0);

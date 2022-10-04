@@ -58,7 +58,6 @@
       & .certificate-animation__right {
         background-color: var(--bg-dark-green);
         width: 50%;
-        /* overflow: hidden; */
 
         /* certificate animation right certified */
         & .certificate-animation__right-certified {
@@ -70,6 +69,7 @@
           text-align: center;
           padding: 10px 25px;
           border: 1px solid var(--bg-light-green);
+          border-top: 0;
           @media (--mobile-lg) {
             padding: 15px 35px;
           }

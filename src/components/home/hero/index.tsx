@@ -4,9 +4,9 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="container">
-        {/* hero socials */}
+        {/* hero details */}
         <div className="hero-section__details">
-          <h1 className="hero-title">HELLO</h1>
+          <h1 className="hero-title hero-title--animate">HELLO</h1>
           <h2 className="hero-subtitle">
             {"I'm"} <br />
             Neljohn <span>Cerera</span>
