@@ -25,4 +25,7 @@ const ListWhatIdo = forwardRef(({ inView }: Props, ref) => {
     </ul>
   );
 });
+
+ListWhatIdo.displayName = "ListWhatIdo";
+
 export default ListWhatIdo;
