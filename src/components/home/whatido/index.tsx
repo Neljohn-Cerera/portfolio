@@ -9,8 +9,6 @@ const WhatIdoSection = () => {
     triggerOnce: true,
   });
 
-  console.log("what i do inView : ", inView);
-
   return (
     <div id="whatido" className="whatido-section">
       <div className="container">

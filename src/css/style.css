@@ -41,6 +41,8 @@
 @import "animations/home/aboutme.css";
 @import "animations/home/whatido.css";
 @import "animations/home/hero.css";
-
+@import "animations/home/skills.css";
+@import "animations/home/certificates.css";
+@import "animations/home/contact.css";
 /* utilities */
 @import "utilities/display.css";

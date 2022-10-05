@@ -4,6 +4,10 @@ import classnames from "classnames";
 import { StaticImageData } from "next/image";
 import React from "react";
 import Link from "next/link";
+import CertificatePanelLeft from "./panel-left";
+import CertificatePanelRight from "./panel-right";
+import CertificateButtons from "./buttons";
+import CertificateButtonOpen from "./btn-open";
 
 interface Props {
   certificateLink: string; // Certificate link
@@ -12,6 +16,7 @@ interface Props {
   certificateImg: StaticImageData; // Certificate image
   handleClickOpenCertificate: (certificate: string) => void; // function which will open certificate
   certificateNumber: string; // Certificate number state, also use in handleClickOpenCertificate parameter
+  inView: boolean;
 }
 
 /**
@@ -32,6 +37,7 @@ const Certificate = ({
   openCertificate,
   handleClickOpenCertificate,
   certificateNumber,
+  inView,
 }: Props) => {
   return (
     <div
@@ -39,6 +45,7 @@ const Certificate = ({
         "certificate-one": certificateNumber === "certificateOne",
         "certificate-two": certificateNumber === "certificateTwo",
         "certificate-three": certificateNumber === "certificateThree",
+        "certificate--animate": inView,
       })}
     >
       {/* certificate animation */}
@@ -48,55 +55,22 @@ const Certificate = ({
         })}
       >
         {/* certificate animation btn open */}
-        <button
-          className={classnames("certificate-animation__btn-open", {
-            "certificate-animation__btn-open--animate": openCertificate,
-          })}
-          onClick={() => handleClickOpenCertificate(certificateNumber)}
-        >
-          OPEN
-        </button>
-
+        <CertificateButtonOpen
+          openCertificate={openCertificate}
+          handleClickOpenCertificate={handleClickOpenCertificate}
+          certificateNumber={certificateNumber}
+        />
         {/* certificate animations left */}
-        <div
-          className={classnames("certificate-animation__left", {
-            "certificate-animation__left--animate": openCertificate,
-          })}
-        >
-          <div className="certificate-animation__left-line"></div>
-          <div className="certificate-animation__left-line"></div>
-          <div className="certificate-animation__left-line--short"></div>
-          <div className="certificate-animation__left-line"></div>
-          <div className="certificate-animation__left-line"></div>
-        </div>
-
+        <CertificatePanelLeft openCertificate={openCertificate} />
         {/* certificate animations right */}
-        <div
-          className={classnames("certificate-animation__right", {
-            "certificate-animation__right--animate": openCertificate,
-          })}
-        >
-          <span
-            className={classnames("certificate-animation__right-certified", {
-              "certificate-animation__right-certified--animate":
-                openCertificate,
-            })}
-          >
-            Certified
-          </span>
-          <RibbonIcon classname="certificate-animation__right-ribbon" />
-        </div>
+        <CertificatePanelRight openCertificate={openCertificate} />
       </div>
 
       {/* certificate buttons */}
-      <div className="certificate-buttons">
-        <h4 className="certificate-buttons__title">{certificateName}</h4>
-        <Link href={certificateLink} passHref>
-          <a target="_blank" rel="noreferrer">
-            Certificate
-          </a>
-        </Link>
-      </div>
+      <CertificateButtons
+        certificateLink={certificateLink}
+        certificateName={certificateName}
+      />
 
       {/* certificate image */}
       <Image

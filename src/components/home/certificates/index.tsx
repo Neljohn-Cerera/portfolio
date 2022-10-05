@@ -2,8 +2,14 @@ import { Title } from "@components/shared";
 import { useState } from "react";
 import { certificates } from "./data";
 import Certificate from "./certificate";
+import { useInView } from "react-intersection-observer";
+import classnames from "classnames";
 
 const CertificatesSection = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
   const [openCertificateOne, setOpenCertificateOne] = useState(false); // certificate one
   const [openCertificateTwo, setOpenCertificateTwo] = useState(false); // certificate two
   const [openCertificateThree, setOpenCertificateThree] = useState(false); // certificate three
@@ -23,15 +29,18 @@ const CertificatesSection = () => {
     } else {
       setOpenCertificateThree(true);
     }
-
     return;
   };
 
   return (
-    <section id="certificates" className="certificates-section">
+    <section ref={ref} id="certificates" className="certificates-section">
       <div className="container">
         {/* certificate title */}
-        <Title.Section classname="certificate-title">
+        <Title.Section
+          classname={classnames("certificate-title", {
+            "certificate-title--animate": inView,
+          })}
+        >
           CERTIFICATES
         </Title.Section>
         {/* mapping certificates and render Certificate component */}
@@ -50,6 +59,7 @@ const CertificatesSection = () => {
                 : openCertificateThree
             }
             certificateLink={certificate.link}
+            inView={inView}
           />
         ))}
       </div>

@@ -9,8 +9,6 @@ const AboutMeSection = () => {
     triggerOnce: true,
   });
 
-  console.log("about me inView : ", inView);
-
   return (
     <section ref={ref} id="aboutme" className={classnames("aboutme-section")}>
       <div className="container">
