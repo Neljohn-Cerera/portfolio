@@ -49,7 +49,7 @@
     opacity: 0;
     transition: var(--transiton);
 
-    @media (--desktop) {
+    @media (--mobile-lg) {
       animation: animate-bottom-to-top 3s linear 500ms forwards,
         animate-opacity-one 3s linear 500ms forwards;
       transform: translateY(100%);

@@ -1,12 +1,7 @@
-/* .whatido-section {
-  border-bottom: 0.5px solid var(--clr-accent-brown);
-} */
-
-/* main */
-.whatido-section > * {
+.whatido-section {
+  /* whatido title */
   & .whatido-title {
     margin-bottom: 1em;
-
     @media (--laptop) {
       margin-bottom: 0.5em;
     }
@@ -17,6 +12,7 @@
     width: 100%;
     margin-bottom: 3em;
     z-index: 2;
+
     /* whatido item */
     & .whatido__item {
       width: 250px;
@@ -44,7 +40,7 @@
         font-size: var(--fs-base);
         font-weight: var(--fw-semibold);
         letter-spacing: 0.8px;
-        opacity: 0.5;
+        /* opacity: 0.5; */
       }
     }
   }
