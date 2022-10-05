@@ -12,7 +12,7 @@ const AboutMeSection = () => {
   console.log("about me inView : ", inView);
 
   return (
-    <section id="aboutme" className={classnames("aboutme-section")}>
+    <section ref={ref} id="aboutme" className={classnames("aboutme-section")}>
       <div className="container">
         <Title.Section
           classname={classnames("aboutme-title", {
@@ -24,7 +24,6 @@ const AboutMeSection = () => {
 
         {/* about me details */}
         <p
-          ref={ref}
           className={classnames("aboutme-details", {
             "aboutme-details--animate": inView,
           })}
