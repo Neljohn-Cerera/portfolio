@@ -62,7 +62,7 @@ picture {
   }
 }
 
-@media (--mobile-lg) {
+/* @media (--mobile-lg) {
   body {
     background-color: red;
   }
@@ -95,4 +95,4 @@ picture {
   body {
     background-color: violet;
   }
-}
+} */
