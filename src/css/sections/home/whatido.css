@@ -49,26 +49,3 @@
     }
   }
 }
-
-/* animations */
-
-.whatido-title--animate {
-  animation: animateScale 1.2s linear 800ms forwards,
-    animateOpacityOne 1.2s linear 800ms forwards;
-  transform: scale(0);
-  opacity: 0;
-}
-
-.whatido__item--animate-left {
-  animation: animateLeftToRight 1.6s linear 3s forwards,
-    animateOpacityOne 1.6s linear 2s forwards;
-  transform: translateX(-150%);
-  opacity: 0;
-}
-
-.whatido__item--animate-right {
-  animation: animateRightToLeft 1.6s linear 3s forwards,
-    animateOpacityOne 1.6s linear 3s forwards;
-  transform: translateX(100%);
-  opacity: 0;
-}

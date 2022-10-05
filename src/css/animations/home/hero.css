@@ -1,0 +1,50 @@
+/* animations */
+/* animation done after 3secs */
+
+.hero-section {
+  --transiton: transform 500ms ease;
+  /* hero title animation */
+  & .hero-title--animate {
+    animation: animate-left-to-right-base-150percent 1s linear forwards;
+    transition: var(--transiton);
+  }
+
+  /* hero details animation */
+  & .hero-section__details {
+    /* hero section details subtitle */
+    & .hero-subtitle {
+      /* hero section details subtitle line */
+      &::before {
+        animation: animate-scale-left-to-right 1s linear 2s forwards;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: var(--transiton);
+      }
+      /* hero section details subtitle typewriter */
+      &::after {
+        animation: animate-scale-left-to-right-shrink 3s linear 800ms forwards;
+        transform-origin: right;
+        transform: scaleX(100);
+        transition: var(--transiton);
+      }
+    }
+
+    /* hero section details role animation */
+    & .hero-detail__role {
+      animation: animate-bottom-to-top-base-200percent 1s linear 2s forwards,
+        animate-opacity-one 1s linear 2s forwards;
+      transform: translateY(200%);
+      opacity: 0;
+      transition: var(--transiton);
+    }
+  }
+
+  /* hero socials animation */
+  & .hero-section__socials {
+    animation: animate-right-to-left 2.4s linear 500ms forwards,
+      animate-opacity-one 1s linear 500ms forwards;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: var(--transiton);
+  }
+}
