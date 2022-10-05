@@ -3,6 +3,8 @@
 
 .hero-section {
   --transiton: transform 500ms ease;
+  overflow: hidden;
+  /* overflow: hidden; */
   /* hero title animation */
   & .hero-title--animate {
     animation: animate-left-to-right-base-150percent 1s linear forwards;
@@ -46,5 +48,13 @@
     transform: translateX(100%);
     opacity: 0;
     transition: var(--transiton);
+
+    @media (--desktop) {
+      animation: animate-bottom-to-top 3s linear 500ms forwards,
+        animate-opacity-one 3s linear 500ms forwards;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: var(--transiton);
+    }
   }
 }

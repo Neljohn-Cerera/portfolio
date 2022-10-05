@@ -6,14 +6,17 @@
     --animation-delay: 200ms;
   }
 
+  /* title default */
   & .aboutme-title {
     transform: translateX(-100%);
     opacity: 0;
   }
+  /* img__container default */
   & .aboutme-img__container {
     transform: scale(0);
     opacity: 0;
   }
+  /* details default */
   & .aboutme-details {
     transform: translateY(100%) scale(0);
     opacity: 0;
