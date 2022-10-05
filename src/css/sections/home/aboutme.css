@@ -1,9 +1,6 @@
 .aboutme-section {
   background-color: var(--bg-light-green);
-  /* border-bottom: 0.5px solid var(--clr-accent-brown); */
-}
 
-.aboutme-section {
   /* about me title */
   & .aboutme-title {
     text-align: left;
@@ -32,8 +29,6 @@
 
   & .aboutme-img__container {
     width: 70%;
-    opacity: 0.1;
-
     @media (--laptop) {
       width: 40%;
       opacity: 1;
@@ -42,5 +37,41 @@
     & .aboutme-details__img {
       height: 100%;
     }
+  }
+}
+
+/* animations */
+
+.aboutme-section {
+  --animation-delay: 4s;
+  @media (--desktop) {
+    --animation-delay: 800ms;
+  }
+  /* animate aboutme title */
+  & .aboutme-title--animate {
+    animation: animateLeftToRight 1s linear var(--animation-delay) forwards,
+      animateOpacityOne 1s linear var(--animation-delay) forwards;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  /* animate aboutme image */
+  & .aboutme-img__container--animate {
+    animation: animateScale 1s linear var(--animation-delay) forwards,
+      animateOpacityPointOne 1s linear var(--animation-delay) forwards;
+    transform: scale(0);
+    opacity: 0;
+
+    @media (--laptop) {
+      animation: animateScale 1s linear var(--animation-delay) forwards,
+        animateOpacityOne 1s linear var(--animation-delay) forwards;
+    }
+  }
+  /* animate aboutme details */
+  & .aboutme-details--animate {
+    animation: animateBottomToTop 1s linear var(--animation-delay) forwards,
+      animateScale 1s linear var(--animation-delay) forwards,
+      animateOpacityPointSeven 1s linear var(--animation-delay) forwards;
+    transform: translateY(100%) scale(0);
+    opacity: 0;
   }
 }
