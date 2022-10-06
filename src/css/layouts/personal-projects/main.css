@@ -1,0 +1,43 @@
+.projectsWrapper > .container {
+  display: grid;
+  grid-template-areas:
+    "aside"
+    "projects"
+    "frontentmentors";
+  grid-template-rows: 50px 1fr 1fr;
+  @media (--tablet-md) {
+    grid-template-areas:
+      "projects aside"
+      "frontentmentors aside";
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: none;
+  }
+
+  /* aside navigation */
+  & .aside {
+    grid-area: aside;
+
+    & .projectsNavigation {
+      width: 100%;
+      height: 100%;
+
+      & .projectsNavigation__list {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+
+  /* personal projects */
+  & .personalProject {
+    grid-area: projects;
+  }
+
+  /* frontend mentors */
+  & .frontentMentors {
+    grid-area: frontentmentors;
+  }
+}

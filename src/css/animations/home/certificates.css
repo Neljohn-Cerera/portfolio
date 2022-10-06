@@ -1,6 +1,5 @@
 /* animations */
 .certificates-section {
-  --transiton: transform 500ms ease;
   /* certificate title */
   & .certificate-title {
     transform: scale(0);
@@ -17,12 +16,10 @@
       animate-opacity-one 1.2s linear 200ms forwards;
     transform: scale(0);
     opacity: 0;
-    transition: var(--transiton);
   }
 
   & .certificate--animate {
     animation: animate-opacity-one 1.2s linear 800ms forwards;
     opacity: 0;
-    transition: var(--transiton);
   }
 }

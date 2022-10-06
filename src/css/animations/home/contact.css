@@ -1,6 +1,5 @@
 /* animations */
 .contact-section {
-  --transiton: transform 500ms ease;
   /* contact details title */
   & .contact-details__titlee {
     transform: scale(0);
@@ -18,7 +17,6 @@
       animate-opacity-one 1.2s linear 200ms forwards;
     transform: scale(0);
     opacity: 0;
-    transition: var(--transiton);
   }
 
   & .contact-details__key--animate {
@@ -26,6 +24,5 @@
       animate-opacity-one 1s linear 1s forwards;
     transform: translateX(-150%);
     opacity: 0;
-    transition: var(--transiton);
   }
 }

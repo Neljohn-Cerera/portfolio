@@ -1,41 +1,26 @@
-import { img_books, img_mobile } from "@assets/images";
-import { Title, Button, Image } from "@components/shared";
+import { Button, Title } from "@components/shared";
+import { useInView } from "react-intersection-observer";
+import Project from "./project";
 // import Image from "next/image";
+import classnames from "classnames";
 
 const ProjectSection = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
   return (
-    <div id="projects" className="project-section">
+    <div
+      ref={ref}
+      id="projects"
+      className={classnames("project-section", {
+        "project-section--animate": inView,
+      })}
+    >
       <div className="container">
         <Title.Section classname="project-title">PROJECTS</Title.Section>
-
-        <Image
-          src={img_books}
-          alt="Hands holding Books picture"
-          classname="project-img"
-        />
-
-        {/* project details */}
-        <div className="project-details">
-          <Title.SectionSubtitle>
-            Library Book Reservation
-          </Title.SectionSubtitle>
-          {/* project details tech list */}
-          <ul role={"list"} className="project-details__tech-list">
-            <li className="project-details__tech-list__item">
-              Next js Typescript
-            </li>
-            <li className="project-details__tech-list__item">Tailwind css</li>
-            <li className="project-details__tech-list__item">Graphql</li>
-            <li className="project-details__tech-list__item">
-              Apollo Express Server
-            </li>
-            <li className="project-details__tech-list__item">
-              React native Expo
-            </li>
-            <li className="project-details__tech-list__item">PostgreSQL</li>
-          </ul>
-        </div>
-
+        {/* project */}
+        <Project />
         {/* project view all button */}
         <Button text="View all" classNames="project-btn" />
       </div>

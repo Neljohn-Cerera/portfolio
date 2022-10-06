@@ -12,7 +12,7 @@
 @import "components/shared/image.css";
 @import "components/shared/scrolltoTop.css";
 
-/* layous */
+/* layouts */
 @import "layouts/home/hero.css";
 @import "layouts/home/skills-whatido.css";
 @import "layouts/home/whatido.css";
@@ -21,6 +21,7 @@
 @import "layouts/home/certificates.css";
 @import "layouts/home/contact.css";
 @import "layouts/home/aboutme.css";
+@import "layouts/personal-projects/main.css";
 @import "layouts/footer.css";
 @import "layouts/header.css";
 
@@ -35,6 +36,7 @@
 @import "sections/home/contact.css";
 @import "sections/footer/footer.css";
 @import "sections/header.css";
+@import "sections/personal-projects/main.css";
 
 /* animations */
 @import "animations/keyframes.css";
@@ -44,5 +46,7 @@
 @import "animations/home/skills.css";
 @import "animations/home/certificates.css";
 @import "animations/home/contact.css";
+@import "animations/home/projects.css";
+
 /* utilities */
 @import "utilities/display.css";

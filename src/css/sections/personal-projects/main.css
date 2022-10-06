@@ -1,0 +1,6 @@
+.projectsWrapper > .container {
+  padding: 0;
+  @media (--tablet) {
+    padding-block: 3rem;
+  }
+}
