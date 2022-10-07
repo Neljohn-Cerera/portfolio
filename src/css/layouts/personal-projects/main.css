@@ -10,11 +10,13 @@
     "projects"
     "frontentmentors-title"
     "frontentmentors";
-  grid-template-rows: 50px 100% 1fr 100% 1fr;
+  grid-template-rows: 50px auto 1fr auto auto;
   @media (--tablet-md) {
     grid-template-areas:
-      "projects aside"
-      "frontentmentors aside";
+      "projects-title aside"
+      "projects ."
+      "frontentmentors-title frontentmentors-title"
+      "frontentmentors frontentmentors";
     grid-template-columns: 1fr 300px;
     grid-template-rows: none;
   }
