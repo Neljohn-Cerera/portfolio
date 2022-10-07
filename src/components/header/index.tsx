@@ -1,10 +1,14 @@
 import { DownloadIcon, MenuIcon, MyLogo } from "@assets/icons";
 import classnames from "classnames";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Header = () => {
+  const router = useRouter();
+
   const [openMenu, setOpenMenu] = useState<boolean | undefined>(undefined);
 
   const handleClickOpenMenu = () => {
@@ -31,19 +35,45 @@ const Header = () => {
           })}
         >
           <li className="header-navigation__item">
-            <AnchorLink href="#home">Home</AnchorLink>
+            {router.pathname === "/" ? (
+              <AnchorLink href="#home">Home</AnchorLink>
+            ) : (
+              <Link href="/" passHref>
+                <a>Home</a>
+              </Link>
+            )}
           </li>
           <li className="header-navigation__item">
-            <AnchorLink href="#projects">Projects</AnchorLink>
+            <Link href="/projects" passHref>
+              <a>Projects</a>
+            </Link>
           </li>
           <li className="header-navigation__item">
-            <AnchorLink href="#certificates">Certificates</AnchorLink>
+            {router.pathname === "/" ? (
+              <AnchorLink href="#certificates">Certificates</AnchorLink>
+            ) : (
+              <Link href="/" passHref>
+                <a>Certificates</a>
+              </Link>
+            )}
           </li>
           <li className="header-navigation__item">
-            <AnchorLink href="#aboutme">About Me</AnchorLink>
+            {router.pathname === "/" ? (
+              <AnchorLink href="#aboutme">About Me</AnchorLink>
+            ) : (
+              <Link href="/" passHref>
+                <a>About Me</a>
+              </Link>
+            )}
           </li>
           <li className="header-navigation__item">
-            <AnchorLink href="#contactme">Contact Me</AnchorLink>
+            {router.pathname === "/" ? (
+              <AnchorLink href="#contactme">Contact Me</AnchorLink>
+            ) : (
+              <Link href="/" passHref>
+                <a>Contact Me</a>
+              </Link>
+            )}
           </li>
           <li className="header-navigation__item-download">
             <a href="#contactme">Download CV</a>

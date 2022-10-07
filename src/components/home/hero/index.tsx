@@ -1,4 +1,5 @@
 import { FacebookIcon, GithubIcon, LinkinIcon } from "@assets/icons";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -19,9 +20,21 @@ const HeroSection = () => {
           <p className="hero-social__title">Follow me</p>
           <div className="hero-social__line"></div>
           <div className="hero-social__icons">
-            <FacebookIcon classname="icon-social" />
-            <GithubIcon classname="icon-social" />
-            <LinkinIcon classname="icon-social" />
+            <Link href="https://www.facebook.com/nel.john.125" passHref>
+              <a className="project__link" target="_blank" rel="noreferrer">
+                <FacebookIcon classname="icon-social" />
+              </a>
+            </Link>
+            <Link href="https://github.com/Neljohn-Cerera" passHref>
+              <a className="project__link" target="_blank" rel="noreferrer">
+                <GithubIcon classname="icon-social" />
+              </a>
+            </Link>
+            <Link href="" passHref>
+              <a className="project__link" target="_blank" rel="noreferrer">
+                <LinkinIcon classname="icon-social" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

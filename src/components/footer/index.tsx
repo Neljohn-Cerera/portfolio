@@ -1,4 +1,5 @@
 import { FacebookIcon, GithubIcon, LinkinIcon } from "@assets/icons";
+import Link from "next/link";
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
@@ -28,7 +29,7 @@ const Footer = ({ isProjectsPage }: Props) => {
           <nav className="footer-navigation">
             <ul role={"list"}>
               <li className="footer-navigation__item">
-                <AnchorLink href="#">Home</AnchorLink>
+                <AnchorLink href="#home">Home</AnchorLink>
               </li>
               <li className="footer-navigation__item">
                 <AnchorLink href="#whatido">What i do</AnchorLink>
@@ -59,9 +60,21 @@ const Footer = ({ isProjectsPage }: Props) => {
             <p className="footer-social__title">Follow me</p>
             <div className="footer-social__line"></div>
             <div className="footer-social__icons">
-              <FacebookIcon classname="icon-social" />
-              <GithubIcon classname="icon-social" />
-              <LinkinIcon classname="icon-social" />
+              <Link href="https://www.facebook.com/nel.john.125" passHref>
+                <a className="project__link" target="_blank" rel="noreferrer">
+                  <FacebookIcon classname="icon-social" />
+                </a>
+              </Link>
+              <Link href="https://github.com/Neljohn-Cerera" passHref>
+                <a className="project__link" target="_blank" rel="noreferrer">
+                  <GithubIcon classname="icon-social" />
+                </a>
+              </Link>
+              <Link href="" passHref>
+                <a className="project__link" target="_blank" rel="noreferrer">
+                  <LinkinIcon classname="icon-social" />
+                </a>
+              </Link>
             </div>
           </div>
           {/* footer bottom copyright */}
