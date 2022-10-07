@@ -15,8 +15,26 @@ import img_books from "./books.jpg";
 import img_certificate_advancereact from "./advancereact.png";
 import img_certificate_learnresponsivedesign from "./learnresponsivedesign.png";
 import img_certificate_frontendcareerpath from "./frontendcareerpath.png";
+import img_m_cone from "./m-cone.jpg";
+import img_testimonial_grid from "./testimonial-grid.jpg";
+import img_social_proof from "./social-proof.jpg";
+import img_order_summary from "./order-summary.jpg";
+import img_rating_component from "./rating-component.jpg";
+import life_img from "./life.jpg";
+import img_asset_management from "./asset-management.jpg";
+import img_barangay_certficate from "./barangay-certificate.jpg";
+import img_classroom_attendance from "./classroom-attendance.jpg";
 
 export {
+  img_classroom_attendance,
+  img_barangay_certficate,
+  img_asset_management,
+  life_img,
+  img_rating_component,
+  img_order_summary,
+  img_social_proof,
+  img_testimonial_grid,
+  img_m_cone,
   img_mongodb,
   img_mobile,
   img_certficate,

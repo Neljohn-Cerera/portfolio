@@ -24,7 +24,7 @@ const Projects: NextPage = () => {
         </main>
 
         {/* FOOTER */}
-        <Footer />
+        <Footer isProjectsPage />
       </>
     </>
   );

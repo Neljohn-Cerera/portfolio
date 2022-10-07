@@ -21,7 +21,7 @@
 @import "layouts/home/certificates.css";
 @import "layouts/home/contact.css";
 @import "layouts/home/aboutme.css";
-@import "layouts/personal-projects/main.css";
+@import "layouts/capstones-projects/main.css";
 @import "layouts/footer.css";
 @import "layouts/header.css";
 
@@ -36,7 +36,7 @@
 @import "sections/home/contact.css";
 @import "sections/footer/footer.css";
 @import "sections/header.css";
-@import "sections/personal-projects/main.css";
+@import "sections/capstones-projects/main.css";
 
 /* animations */
 @import "animations/keyframes.css";

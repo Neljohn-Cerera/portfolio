@@ -2,18 +2,24 @@ import { Title } from "@components/shared";
 import React from "react";
 import CProjectsNavigation from "./aside";
 import CFrontendMentors from "./frontend-mentors";
-import CPersonalProjects from "./personal-projects";
+import CCapstonesProjects from "./capstone-projects";
 
 const CProjects = () => {
   return (
     <div className="projectsWrapper">
       <div className="container">
+        {/* Aside */}
         <CProjectsNavigation />
-        <Title.Section classname="personalProjects-title">
-          Personal Projects
+        {/* Capstones projects */}
+        <Title.Section
+          id="personalProjects"
+          classname="capstonesProjects-title"
+        >
+          Capstone Projects
         </Title.Section>
-        <CPersonalProjects />
-        <Title.Section classname="frontentMentors-title">
+        <CCapstonesProjects />
+        {/* Frontend Mentors Projects */}
+        <Title.Section id="frontendMentors" classname="frontentMentors-title">
           Frontend Mentors Projects
         </Title.Section>
         <CFrontendMentors />

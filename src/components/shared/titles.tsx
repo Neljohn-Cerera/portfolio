@@ -4,14 +4,19 @@ import classnames from "classnames";
 interface Props {
   children: ReactNode;
   classname?: string;
+  id?: string;
 }
 
 const Title = (props: Props) => {
   return <>{props.children}</>;
 };
 
-const Section: React.FC<Props> = ({ children, classname }) => {
-  return <h3 className={classnames("title-section", classname)}>{children}</h3>;
+const Section: React.FC<Props> = ({ children, classname, id }) => {
+  return (
+    <h3 id={id} className={classnames("title-section", classname)}>
+      {children}
+    </h3>
+  );
 };
 
 const SectionSubtitle: React.FC<Props> = ({ children, classname }) => {

@@ -7,8 +7,11 @@ const CProjectsNavigation = () => {
       <nav className="projectsNavigation">
         <ul role={"list"} className="projectsNavigation__list">
           <li className="projectsNavigation__listItem">
-            <AnchorLink href="#personalProjects">Projects</AnchorLink>
+            <AnchorLink href="#personalProjects">Capstones</AnchorLink>
           </li>
+          {/* <li className="projectsNavigation__listItem">
+            <AnchorLink href="#personalProjects">Personal Projects</AnchorLink>
+          </li> */}
           <li className="projectsNavigation__listItem">
             <AnchorLink href="#frontendMentors"> Frontend Mentors</AnchorLink>
           </li>
