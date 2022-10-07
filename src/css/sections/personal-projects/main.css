@@ -3,4 +3,37 @@
   @media (--tablet) {
     padding-block: 3rem;
   }
+
+  /* personal projects title */
+  & .personalProjects-title {
+    line-height: var(--line-height);
+  }
+
+  /* personal projects */
+  & .personalProjects {
+    & .project__content {
+      & .project__img {
+        width: 100%;
+        height: 200px;
+      }
+
+      & .subtitle-section {
+        text-align: left;
+        line-height: 1.2;
+      }
+
+      & .project__link {
+        color: blue;
+
+        &:hover {
+          color: rgb(30, 30, 161);
+        }
+      }
+    }
+  }
+
+  /* frontend mentors title */
+  & .frontentMentors-title {
+    line-height: var(--line-height);
+  }
 }

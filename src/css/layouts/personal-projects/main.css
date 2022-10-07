@@ -1,10 +1,16 @@
 .projectsWrapper > .container {
+  --gap: 1rem;
+  --line-height: 1.1;
+  --margin-bottom: 1rem;
+
   display: grid;
   grid-template-areas:
     "aside"
+    "projects-title"
     "projects"
+    "frontentmentors-title"
     "frontentmentors";
-  grid-template-rows: 50px 1fr 1fr;
+  grid-template-rows: 50px 100% 1fr 100% 1fr;
   @media (--tablet-md) {
     grid-template-areas:
       "projects aside"
@@ -31,9 +37,29 @@
     }
   }
 
+  /* personal projects title */
+  & .personalProjects-title {
+    grid-area: projects-title;
+  }
+
   /* personal projects */
-  & .personalProject {
+  & .personalProjects {
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    & .project__content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap);
+      margin-bottom: var(--margin-bottom);
+    }
+  }
+
+  /* frontend mentors title */
+  & .frontentMentors-title {
+    grid-area: frontentmentors-title;
   }
 
   /* frontend mentors */

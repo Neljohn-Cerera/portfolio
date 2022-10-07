@@ -4,7 +4,6 @@ import { data } from "./data";
 const CFrontendMentors = () => {
   return (
     <div id="frontendMentors" className="frontentMentors">
-      <h2>Frontend Mentors Projects</h2>
       {data?.map((project) => (
         <div
           key={project.id}
@@ -19,3 +18,4 @@ const CFrontendMentors = () => {
 };
 
 export default CFrontendMentors;
+//

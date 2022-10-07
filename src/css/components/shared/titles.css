@@ -3,7 +3,7 @@
 .title-section {
   color: var(--text-white);
   /* font-size: var(--fs-lg); */
-  font-size: clamp(var(--fs-lg), 6vw, var(--fs-2xl));
+  font-size: clamp(var(--fs-md-1), 6vw, var(--fs-xl));
   /* font-size: var(--fs-lg); */
   font-weight: var(--fw-bold);
   letter-spacing: 5px;
@@ -13,7 +13,8 @@
 
 .subtitle-section {
   color: var(--text-brown);
-  font-size: var(--fs-md-1);
+  font-size: var(--fs-md);
+  font-size: clamp(var(--fs-md), 4vw, var(--fs-md-1));
   font-weight: var(--fw-bold);
   text-align: center;
 }

@@ -1,3 +1,4 @@
+import { Image, Title } from "@components/shared";
 import Link from "next/link";
 import React from "react";
 import { data } from "./data";
@@ -5,13 +6,17 @@ import { data } from "./data";
 const CPersonalProjects = () => {
   return (
     <div id="personalProjects" className="personalProjects">
-      <h2>Personal Projects</h2>
       {data?.map((project) => (
-        <div key={project.id} className={`project__${project.classname}`}>
-          <h3>{project.projectName}</h3>
+        <div key={project.id} className={`project__content`}>
+          <Image
+            src={project.img}
+            alt={project.imgAlt}
+            classname="project__img"
+          />
+          <Title.SectionSubtitle>{project.projectName}</Title.SectionSubtitle>
           <Link href={project.websiteLink} passHref>
-            <a target="_blank" rel="noreferrer">
-              {project.websiteName}
+            <a className="project__link" target="_blank" rel="noreferrer">
+              Website
             </a>
           </Link>
           <p>{project.description}</p>

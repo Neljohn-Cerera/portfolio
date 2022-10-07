@@ -1,3 +1,4 @@
+import { img_books } from "@assets/images";
 export const data = [
   {
     id: 1,
@@ -8,6 +9,8 @@ export const data = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: img_books,
+    imgAlt: "Hands holding Books picture",
   },
   {
     id: 2,
@@ -18,6 +21,8 @@ export const data = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: img_books,
+    imgAlt: "Hands holding Books picture",
   },
   {
     id: 3,
@@ -28,6 +33,8 @@ export const data = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: img_books,
+    imgAlt: "Hands holding Books picture",
   },
   {
     id: 4,
@@ -38,5 +45,7 @@ export const data = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: img_books,
+    imgAlt: "Hands holding Books picture",
   },
 ];
