@@ -2,6 +2,7 @@ import { img_contact } from "@assets/images";
 import { Image, Title } from "@components/shared";
 import { useInView } from "react-intersection-observer";
 import classnames from "classnames";
+import Link from "next/link";
 
 const ContactSection = () => {
   const { ref, inView } = useInView({
@@ -46,8 +47,24 @@ const ContactSection = () => {
           >
             Email : <br />
             <span className="contact-details__key-value">
-              neljohncerera.github@gmail.com
+              neljohncerera.developer@gmail.com
             </span>
+          </p>
+          <p
+            className={classnames("contact-details__key", {
+              "contact-details__key--animate": inView,
+            })}
+          >
+            LinkedIn : <br />
+            <Link href="https://www.linkedin.com/in/neljohn-cerera/" passHref>
+              <a
+                className="contact-details__key-value"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.linkedin.com/in/neljohn-cerera/
+              </a>
+            </Link>
           </p>
         </div>
       </div>

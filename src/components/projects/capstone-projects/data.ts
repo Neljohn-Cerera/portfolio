@@ -128,11 +128,11 @@ export const data = [
     id: 3,
     idNumber: "teacherAttendance",
     projectName: "Android Classroom Teacher Attendance",
-    websiteLink: "/",
+    websiteLink: "https://teacher-attendance.vercel.app/",
     websiteName: "Teacher Attendance Admin Panel",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "The main purpose of this research is to develop a mobile " +
+      "app which utilizes the QR Code to record and to monitor the attendance of the teachers.",
     img: img_classroom_attendance,
     imgAlt: "Hands holding Books picture",
     technologies: [
@@ -190,8 +190,8 @@ export const data = [
       "https://github.com/Neljohn-Cerera/capstone-online__barangay__certificate__request",
     websiteName: "Barangay Certificate Request Github",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "The Online Barangay Request Certificate System, are really helpful in the barangay" +
+      "community to access and requesting for a particular certificate through online.",
     img: img_barangay_certficate,
     imgAlt: "Hands holding Books picture",
     technologies: [
