@@ -24,8 +24,14 @@ import life_img from "./life.jpg";
 import img_asset_management from "./asset-management.jpg";
 import img_barangay_certficate from "./barangay-certificate.jpg";
 import img_classroom_attendance from "./classroom-attendance.jpg";
+import img_mern from "./mern.jpg";
+import img_url_shortener from "./url-shortener.png";
+import img_pricing_components from "./pricing-components.png";
 
 export {
+  img_pricing_components,
+  img_url_shortener,
+  img_mern,
   img_classroom_attendance,
   img_barangay_certficate,
   img_asset_management,

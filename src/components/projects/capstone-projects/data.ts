@@ -3,11 +3,14 @@ import {
   img_barangay_certficate,
   img_books,
   img_classroom_attendance,
+  img_mern,
+  img_pricing_components,
+  img_url_shortener,
 } from "@assets/images";
 export const data = [
   {
     id: 1,
-    classname: "bookReservation",
+    idNumber: "bookReservation",
     projectName: "Library Book Reservation",
     websiteLink: "https://web-book-reservation.vercel.app/",
     androidDownloadLinkOne:
@@ -77,7 +80,7 @@ export const data = [
   },
   {
     id: 2,
-    classname: "assetManagement",
+    idNumber: "assetManagement",
     projectName: "Asset Management",
     websiteLink: "https://client-asset-management.vercel.app/",
     websiteName: "Asset Management Website",
@@ -123,7 +126,7 @@ export const data = [
   },
   {
     id: 3,
-    classname: "teacherAttendance",
+    idNumber: "teacherAttendance",
     projectName: "Android Classroom Teacher Attendance",
     websiteLink: "/",
     websiteName: "Teacher Attendance Admin Panel",
@@ -181,7 +184,7 @@ export const data = [
   },
   {
     id: 4,
-    classname: "barangayCertificate",
+    idNumber: "barangayCertificate",
     projectName: "Barangay Certificate Request",
     websiteLink:
       "https://github.com/Neljohn-Cerera/capstone-online__barangay__certificate__request",
@@ -235,6 +238,109 @@ export const data = [
       {
         id: 11,
         name: "Mysql",
+      },
+    ],
+  },
+  {
+    id: 5,
+    idNumber: "crud",
+    projectName: "Crud MERN Stack, Nextjs",
+    websiteLink: "https://portfolio-crud-menn-client.vercel.app/",
+    websiteName: "Crud",
+    description:
+      "A simple Create, Read, Delete, Update website created with " +
+      "MongoDB Express Nextjs Node",
+    img: img_mern,
+    imgAlt: "Mongodb Express Reactjs Nodejs image logos",
+    technologies: [
+      {
+        id: 1,
+        name: "Nextjs",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+      },
+      {
+        id: 4,
+        name: "Axios",
+      },
+      {
+        id: 5,
+        name: "React Query",
+      },
+      {
+        id: 6,
+        name: "Node JS",
+      },
+      {
+        id: 7,
+        name: "Express",
+      },
+      {
+        id: 8,
+        name: "Mongodb",
+      },
+    ],
+  },
+  {
+    id: 6,
+    idNumber: "urlShortener",
+    projectName: "Url Shortener",
+    websiteLink: "https://portfolio-url-shortener.vercel.app/",
+    websiteName: "Url Shortener",
+    description:
+      "URL Shortener is a tool that reduces the length of your URL while ensuring navigation to the desired page.",
+    img: img_url_shortener,
+    imgAlt: "Url Shortener image",
+    technologies: [
+      {
+        id: 1,
+        name: "Reactjs",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+      },
+      {
+        id: 4,
+        name: "Axios",
+      },
+      {
+        id: 5,
+        name: "SHRTCODE API",
+      },
+    ],
+  },
+  {
+    id: 7,
+    idNumber: "pricingComponents",
+    projectName: "Pricing Components",
+    websiteLink: "https://portfolio-pricing-components.vercel.app/",
+    websiteName: "Pricing Components",
+    description: "Different design for creating pricing components.",
+    img: img_pricing_components,
+    imgAlt: "Pricing Component image",
+    technologies: [
+      {
+        id: 1,
+        name: "Reactjs",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
       },
     ],
   },

@@ -15,12 +15,16 @@
   @media (--tablet-md) {
     grid-template-areas:
       "projects-title aside"
-      "projects ."
+      "projects aside"
       "frontentmentors-title frontentmentors-title"
       "frontentmentors frontentmentors";
     grid-template-columns: 1fr 250px;
     grid-template-rows: none;
     column-gap: 1em;
+  }
+  @media (--laptop) {
+    grid-template-columns: 1fr 300px;
+    column-gap: 1.5em;
   }
 
   /* aside */
@@ -28,16 +32,51 @@
     grid-area: aside;
     padding-block: 0.5em;
     margin-bottom: 1em;
+    /* @media (--tablet) {
+      height: 25%;
+    }
+
+    @media (--laptop) {
+      height: 20%;
+    } */
 
     /* aside navigation */
     & .projectsNavigation {
+      width: 100%;
+      height: 100%;
       /* aside navigation list */
       & .projectsNavigation__list {
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         gap: 1em;
+        @media (--tablet-md) {
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        /* aside navigation list item */
+        & .projectsNavigation__listItem {
+          @media (--tablet-md) {
+            width: 100%;
+          }
+        }
+
+        /* aside navigation list item capstones list */
+        /* aside navigation list item frontendmentor list */
+        & .projectsNavigation__listItem__capstones-list,
+        & .projectsNavigation__listItem__frontendmentor-list {
+          display: none;
+          @media (--tablet-md) {
+            margin-top: 0.4em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+          }
+        }
       }
     }
   }
@@ -70,6 +109,7 @@
       & .project__technologies {
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 0.5em;
         flex-wrap: wrap;
       }

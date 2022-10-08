@@ -7,22 +7,40 @@
   /* aside */
   & .aside {
     grid-area: aside;
-    /* box-shadow: 0 0 1px 1px var(--bg-light-green); */
     border-bottom: 1px solid var(--bg-light-green);
+    @media (--tablet-md) {
+      border-left: 1px solid var(--bg-light-green);
+      border-bottom: none;
+    }
 
     /* aside navigation */
     & .projectsNavigation {
-      width: 100%;
-      height: 100%;
-
       /* aside navigation list */
       & .projectsNavigation__list {
-        height: 100%;
+        @media (--tablet-md) {
+          padding: 0.5em 1em;
+        }
+
+        /* aside navigation list item */
         & .projectsNavigation__listItem {
-          /* font-size: var(--fs-base);
-          letter-spacing: 2px; */
-          /* text-transform: uppercase; */
           letter-spacing: 1px;
+
+          /* aside navigation list item capstones list item */
+          /* aside navigation list item frontendmentor list item */
+          & .projectsNavigation__listItem__capstones-listItem,
+          & .projectsNavigation__listItem__frontendmentor-listItem {
+            margin-left: 2rem;
+
+            & > * {
+              color: var(--bg-brown);
+            }
+
+            & :hover {
+              transition: all 200ms ease-in-out;
+              color: blue;
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
@@ -83,14 +101,15 @@
       /* capstones projects content technologies */
       & .project__technologies {
         & .project__technologies-name {
-          display: inline;
+          display: inline-block;
           color: var(--text-white);
           font-size: var(--fs-sm);
           font-weight: var(--fw-semibold);
           background-color: var(--bg-light-green);
+          border-radius: 10px;
           padding-block: 0.3em;
           padding-inline: 1em;
-          border-radius: 10px;
+          white-space: pre-wrap;
         }
       }
     }

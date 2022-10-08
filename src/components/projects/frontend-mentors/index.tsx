@@ -19,7 +19,7 @@ const CFrontendMentors = () => {
           <h3 className="frontentMentor_project-title">
             {project.projectName}
           </h3>
-          <Link href="/" passHref>
+          <Link href={project.link} passHref>
             <a
               className="frontentMentor_project-link"
               target="_blank"

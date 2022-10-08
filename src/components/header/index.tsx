@@ -43,6 +43,7 @@ const Header = () => {
               </Link>
             )}
           </li>
+
           <li className="header-navigation__item">
             <Link href="/projects" passHref>
               <a>Projects</a>

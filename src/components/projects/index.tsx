@@ -15,7 +15,7 @@ const CProjects = () => {
           id="personalProjects"
           classname="capstonesProjects-title"
         >
-          Capstone Projects
+          Projects
         </Title.Section>
         <CCapstonesProjects />
         {/* Frontend Mentors Projects */}

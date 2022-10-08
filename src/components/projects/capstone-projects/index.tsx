@@ -8,7 +8,11 @@ const CCapstonesProjects = () => {
   return (
     <div className="capstonesProjects">
       {data?.map((project) => (
-        <div key={project.id} className={`project__content`}>
+        <div
+          id={project.idNumber}
+          key={project.id}
+          className={`project__content`}
+        >
           {/* project image */}
           <Image
             src={project.img}
@@ -46,13 +50,13 @@ const CCapstonesProjects = () => {
           {/* project description */}
           <p>{project.description}</p>
           {/* project technologies */}
-          <div className="project__technologies">
+          <ul className="project__technologies">
             {project.technologies.map((tech) => (
-              <p className="project__technologies-name" key={tech.id}>
+              <li className="project__technologies-name" key={tech.id}>
                 {tech.name}
-              </p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ))}
     </div>
