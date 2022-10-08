@@ -14,6 +14,21 @@ const Header = () => {
   const handleClickOpenMenu = () => {
     !openMenu ? setOpenMenu(true) : openMenu ? setOpenMenu(false) : undefined;
   };
+
+  const handleDownloadResume = () => {
+    // using Java Script method to get PDF file
+    fetch("neljohncerera-resume.docx").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "neljohncerera-resume.docx";
+        alink.click();
+      });
+    });
+  };
   return (
     <header id="home" className="header">
       {/* header logo */}
@@ -83,7 +98,7 @@ const Header = () => {
       </nav>
 
       {/* header button download cv */}
-      <button className="btn btn-download">
+      <button className="btn btn-download" onClick={handleDownloadResume}>
         Download CV <DownloadIcon classname="btn-download__icon" />
       </button>
     </header>
