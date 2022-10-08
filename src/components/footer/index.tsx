@@ -70,7 +70,7 @@ const Footer = ({ isProjectsPage }: Props) => {
                   <GithubIcon classname="icon-social" />
                 </a>
               </Link>
-              <Link href="" passHref>
+              <Link href="https://www.linkedin.com/in/neljohn-cerera/" passHref>
                 <a className="project__link" target="_blank" rel="noreferrer">
                   <LinkinIcon classname="icon-social" />
                 </a>
