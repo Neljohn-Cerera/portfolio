@@ -91,8 +91,11 @@ const Header = () => {
               </Link>
             )}
           </li>
-          <li className="header-navigation__item-download">
-            <a href="#contactme">Download CV</a>
+          <li
+            className="header-navigation__item-download"
+            onClick={handleDownloadResume}
+          >
+            <a>Download CV</a>
           </li>
         </ul>
       </nav>
